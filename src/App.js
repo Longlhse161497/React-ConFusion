@@ -4,8 +4,30 @@ import ReactDOM from 'react-dom';
 import React from 'react';
 import Hello from './Component/Hello';
 import {Hello2} from "./Component/Hello2";
+import Comment from "./Component/Comment";
+import Account from './Component/Account';
+import Store from './Component/Store';
+import Stock from './Component/Stock';
+import Warning from './Component/Warning';
+import Form from './Component/Form';
+import Garage from './Component/Garage';
+import Welcome from './Component/Welcome';
+import Car from './Component/Car';
+import Menu from './Component/MenuComponent';
 
 import {Navbar, NavbarBrand} from 'reactstrap';
+
+const comment={
+  date: new Date(),
+  text: 'welcome to react component',
+  author:{
+    name: 'HaiLong',
+    avatarUrl: './logo192.png'
+  }
+};
+
+const cities=['Jaipur','Jodpur','Udaipur','Pune','Chandigarh'];
+const names=cities.map((c, index)=>{return <li key={index}>{c}</li>});
 
 class App extends React.Component{
   render(){
@@ -16,6 +38,21 @@ class App extends React.Component{
             <NavbarBrand href="/">Ristorante Con Fusion</NavbarBrand>
           </div>
         </Navbar>
+        <Menu></Menu>
+        {/* <Comment date={comment.date} text={comment.text} author={comment.author}></Comment> */}
+        {/* <Account/> */}
+        {/*<Store/>
+        <Store/>*/}
+        {/* <Stock/> */}
+        {/*<Warning/>*/}
+        {/*<Form/>*/}
+        {/*<ul>
+          {names}
+        </ul>*/}     
+        {/* <Garage/> */}
+        {/* <Welcome name="Long"/>
+        <Welcome name="Thuy Kieu"/> */}
+        {/* <Car></Car> */}
       </div>
     );
   }
