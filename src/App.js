@@ -16,6 +16,7 @@ import Car from './Component/Car';
 import Menu from './Component/MenuComponent';
 
 import {Navbar, NavbarBrand} from 'reactstrap';
+import { DISHES } from './shared/dishes';
 
 const comment={
   date: new Date(),
@@ -30,6 +31,12 @@ const cities=['Jaipur','Jodpur','Udaipur','Pune','Chandigarh'];
 const names=cities.map((c, index)=>{return <li key={index}>{c}</li>});
 
 class App extends React.Component{
+  constructor(props){
+    super(props);
+    this.state={
+      dishes: DISHES
+    }
+  }
   render(){
     return(
       <div className="App">
@@ -38,7 +45,7 @@ class App extends React.Component{
             <NavbarBrand href="/">Ristorante Con Fusion</NavbarBrand>
           </div>
         </Navbar>
-        <Menu></Menu>
+        <Menu dishes={this.state.dishes}></Menu>
         {/* <Comment date={comment.date} text={comment.text} author={comment.author}></Comment> */}
         {/* <Account/> */}
         {/*<Store/>
