@@ -16,6 +16,9 @@ function Layout(props){
                     {/* <Link to="/Contact">Contact</Link> */}
                     <NavLink to="/Contact" activeStyle={{color:'red'}}>Contact</NavLink>
                 </li>
+                <li>
+                    <NavLink to='/Profile/1/HaiLong' activeStyle={{color: 'red'}}>Profile</NavLink>
+                </li>
             </ul>
         </nav>
     );
