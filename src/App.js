@@ -11,6 +11,7 @@ import Contact from './Component/Contact';
 import NoPage from './Component/NoPage';
 import Profile from './Component/Profile';
 import MyForm from './Component/MyForm';
+import MyUncontrolledForm from './Component/MyUncontrolledForm';
 import BootstrapForm from './Component/BootstrapForm';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
@@ -25,7 +26,7 @@ class App extends React.Component {
           <div className='App'>
             <Main></Main>
           </div>
-        </BrowserRouter>
+        </BrowserRouter>  
       </div>
     );
   }

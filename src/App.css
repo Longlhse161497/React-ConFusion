@@ -1,7 +1,3 @@
-.App {
-  text-align: center;
-}
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -70,4 +66,8 @@ address{
 
 .navbar-dark{
   background-color: #512DA8;
+}
+
+.breadcrumb{
+  background-color: white !important;
 }
