@@ -31,7 +31,7 @@ class BootstrapForm extends React.Component{
             this.setState({error: {...this.state.error, fullname:'Your fullname should be from 3 chars'}});
         }
         else if(nameControl==="age" && (parseInt(value)<18 || parseInt(value)>65)){
-            this.setState({error: {...this.state.error, age:"Tour age must be from 18 to 65"}});
+            this.setState({error: {...this.state.error, age:"Your age must be from 18 to 65"}});
         }
         else if(nameControl==="email" && !pattern.test(value)){
             this.setState({error: {...this.state.error, email:"Your email is invalid"}});
