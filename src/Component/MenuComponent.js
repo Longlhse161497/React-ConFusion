@@ -16,13 +16,13 @@ function RenderMenuItem({ dish, onClick }) {
   );
 }
 
-class Menu extends Component{
-  constructor(props){
+class Menu extends Component {
+  constructor(props) {
     super(props);
   }
-  render(){
-    const menu = this.props.dishes.map((dish)=>{
-      return(
+  render() {
+    const menu = this.props.dishes.map((dish) => {
+      return (
         <div className="col-12 col-md-5 m-1">
           <div key={dish.id}>
             <RenderMenuItem dish={dish}></RenderMenuItem>
@@ -30,7 +30,7 @@ class Menu extends Component{
         </div>
       );
     });
-    return(
+    return (
       <div className="container">
         <div className="row">
           <Breadcrumb>
